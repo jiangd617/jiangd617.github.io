@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<!-- Setting the viewport to make your website look good on all devices. This should always be included -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My first page</title>
+	<!-- using pictures from fontawesome website -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- adding an icon to the webpage title -->
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<!-- referring to an external css file -->
+	<link rel="stylesheet" href="background_style.css">
+	<!-- defining styles for the whole page -->
+	<!-- Combine Vertical and Horizontal Zebra Stripes for the table-->
+	
+	<style>
+		p {
+		color: red;
+		font-family: courier;
+		font-size: 160%;}
+			table, th, td {
+			border: 1px solid white;
+			border-collapse: collapse;}
+		tr:nth-child(even) {
+			background-color: rgb(100, 130, 238);}
+		th:nth-child(even),td:nth-child(even){
+			background-color: rgb(100, 130, 238);}
+		tr:hover {background-color: #D6EEEE;}
+	</style>
+
+	<!-- defining a list horizontally, to create a navigation menu -->
+	<style>
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333333;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover {
+		  background-color: #111111;
+		}
+	</style>
+
+	<!-- defining aside style -->
+	<style>
+		aside {
+			width: 30%;
+			padding-left: 15px;
+			margin-left: 15px;
+			float: right;
+			font-style: italic;
+			background-color: lightgray;
+		}
+	</style>
+</head>
+
+
+<body>
+<!--creating a menu -->
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+ 
+<!-- This is a comment -->
+<h1>Hello &nbsp &nbsp &nbsp again&copy;</h1>
+<p>I will display &#128512;</p>
+<a href="#iframe1">Jump to Iframes</a>
+<br>
+
+<!-- The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together. -->
+<form>
+	<label for="myfile">Select a file:</label>
+	<input type="file" id="myfile" name="myfile"><br><br>
+	<label for="fname">First Name:</label><br>
+	<input type="text" name="fname" id="fname">
+	<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+	<input type="reset"> 
+</form>
+
+<br>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <input type="submit" value="Submit the form">
+</form> 
+
+<br>
+ <table style="height:200px;width:100%">
+ 	<caption>Monthly Savings</caption>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td colspan="2">Alfreds Futterkiste</td>
+    <td rowspan="2">Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial </td>
+    <td>Francisco Chang</td>
+   </tr>
+</table> 
+
+
+<h2 style="background-color:rgb(200, 130, 238);">Testing</h2> 
+
+<h3 style="background-color: rgba(200,130,238,0.5);">another color</h3>
+ <pre>
+  My      Bonnie lies over the ocean.
+  My Bonnie lies over the sea.
+  My Bonnie lies over the ocean.
+  Oh, bring back my Bonnie to me.
+</pre> 
+
+<aside>
+<p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<!-- using a fontawesome picture -->
+<i class="fa fa-car fa-3x"></i>
+<hr>
+<!-- adding hyperlinks to pictures -->
+<a href="http://www.twitter.com" aria-label="Twitter"><i class="fa fa-twitter fa-3x"></i></a>
+<br>
+<a href="http://www.facebook.com" target="_blank"><img src="statue.jpg" alt="statue"/></a>
+<br>
+<iframe width="420" height="315" src="https://youtu.be/2wpTgQLDj6Q"></iframe>
+
+
+<br>
+<!-- defining imagemap -->
+<img src="statue.jpg" alt="statue1" usemap="#statuemap" width="300" height="400">
+<map name="statuemap">
+	<area shape="rect" coords="33,44,200,300" alt="man" href="http://www.facebook.com" onclick="myFunction()">
+</map>
+<!-- defining an action using javascript -->
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+<br>
+<h1 id="iframe1">The iframe element</h1>
+<iframe src="http://www.facebook.com" title="web development website"></iframe>
+
+
+</body>
+</html>
